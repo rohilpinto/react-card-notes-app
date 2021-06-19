@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./scss/App.scss";
+import logo from "./assets/enter-icon.svg";
+
+const SearchBar = () => {
+  return (
+    <React.Fragment>
+      <div className="title">
+        <h1>Card Notes</h1>
+      </div>
+      <div className="searchbar-container">
+        <form className="searchbar-form">
+          <input type="text" className="searchbar" />
+          <button type="submit" className="searchbar-submit">
+            <img src={logo} alt="button" />
+          </button>
+        </form>
+      </div>
+    </React.Fragment>
+  );
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SearchBar></SearchBar>
     </div>
   );
 }
