@@ -1,0 +1,15 @@
+@use 'variables' as vr;
+
+.random-btn {
+  text-align: center;
+
+  .btn {
+    width: 160px;
+    border: none;
+    padding: 15px 15px;
+
+    border-radius: 5px;
+    background: vr.$bg-yellow;
+    box-shadow: vr.$box-shdw-1;
+  }
+}
