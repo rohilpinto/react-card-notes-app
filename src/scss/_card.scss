@@ -1,0 +1,18 @@
+@use 'variables' as vr;
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  height: fit-content;
+  // margin: auto;
+  margin: 20px 90px;
+  background-color: vr.$bg-yellow;
+  padding: 20px;
+  border-radius: 12px;
+  color: vr.$card-text-clr;
+}

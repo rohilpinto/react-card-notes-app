@@ -22,10 +22,29 @@ const SearchBar = () => {
   );
 };
 
+const NotesCard = () => {
+  return (
+    <React.Fragment>
+      <div className="card-container">
+        <div className="arrow arrow-left">Left</div>
+
+
+        <div className="card">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nulla facilis natus mollitia veniam, libero itaque nam voluptates commodi fuga tempore sequi voluptate quo nemo atque possimus voluptatem! Pariatur, nobis.
+        </div>
+
+
+        <div className="arrow arrow-right">Right</div>
+      </div>
+    </React.Fragment>
+  );
+};
+
 function App() {
   return (
     <div className="App">
       <SearchBar></SearchBar>
+      <NotesCard></NotesCard>
     </div>
   );
 }
